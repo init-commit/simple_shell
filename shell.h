@@ -87,4 +87,22 @@ typedef struct read_variable_list
 	struct read_variable_list *next;
 } var_list;
 
+char *_strcat(char *dest, const char *src);
+char *_strcpy(char *dest, char *src);
+char *_strdup(const char *s);
+int _strlen(const char *s);
+int _isdigit(const char *s);
+int _strcmp(char *s1, char *s2);
+char *_strchr(char *s, char c);
+int _strspn(char *s, char *accept);
+int find_len(int n);
+int _atoi(char *s);
+int _strcmp(char *s1, char *s2);
+char *_strchr(char *s, char c);
+int _strspn(char *s, char *accept);
+char **tokenize(char *input);
+int chars_comp(char str[], const char *delim);
+void reverse_string(char *s);
+char *_itoa(int n);
+
 #endif
