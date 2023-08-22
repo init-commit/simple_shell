@@ -138,13 +138,15 @@ char *_getenv(const char *name, char **_environ);
 char *read_line(int *eof_input);
 char *character_swap(char *input, int bool);
 void assign_line_var(char **lineptr, size_t *n, char *buffer, size_t j);
-void next_command(separator_list **list_s, list_string **list_l, arg_list *shell_data);
+void next_command(separator_list **list_s, list_string **list_l,
+	arg_list *shell_data);
 int cmd_separator(arg_list *shell_data, char *input);
 ssize_t _get_line(char **lineptr, size_t *n, FILE *stream);
 int sh_cd(arg_list *shell_data);
 char *handle_getenv_err(arg_list *shell_data);
 void cd_back(arg_list *shell_data);
-char *str_to_var_input(var_list **head, char *input, char *new_input, int nlen);
+char *str_to_var_input(var_list **head, char *input,
+	char *new_input, int nlen);
 char *replace_variable(char *input, arg_list *shell_data);
 void loop_sh(arg_list *shell_data);
 int if_current_dir(char *path, int *i);
